@@ -1,0 +1,69 @@
+.navbar {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  border-radius: 0px;
+  color: #333333;
+}
+
+.navbar .active {
+  background: transparent;
+}
+
+.product-image {
+  margin: 0px auto;
+}
+
+
+#team {
+  margin-top: 30px;
+  padding-top: 20px;
+  color: white;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #666;
+  border-top: 1px solid #666;
+}
+
+
+#team h4 {
+  color: #aaa;
+}
+
+
+#team img {
+  width: 150px;
+  vertical-align: middle;
+  border: 2px solid #aaa;
+}
+iframe {
+  margin-bottom: -40px;
+}
+
+.profile-desc {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+@media (max-width: 699px) {
+  .profile-desc {
+    text-align: left;
+  }
+}
+.profile {
+  opacity: 0; background: #555; height: 150px; width: 150px; position: absolute; border: none !important;
+}
+
+.profile:hover {
+  opacity: 0.9;
+  border: 2px solid #aaa !important;
+}
+
+.profile img {
+  border: none !important;
+}
+
+#beta {
+  margin-top: 60px;
+}
+
