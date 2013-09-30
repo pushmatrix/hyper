@@ -1,0 +1,108 @@
+body {
+  padding-bottom: 40px;
+  background: white;
+  margin: 0px;
+}
+
+#header {
+  text-align: center;
+  height: 50px;
+  background: red;
+  background: #5380a4; /* Old browsers */
+  background: -moz-linear-gradient(top,  #5380a4 0%, #336289 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5380a4), color-stop(100%,#336289)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #5380a4 0%,#336289 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #5380a4 0%,#336289 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #5380a4 0%,#336289 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #5380a4 0%,#336289 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5380a4', endColorstr='#336289',GradientType=0 ); /* IE6-9 */
+  color: white;
+  font-size: 25px;
+  padding-top: 6px;
+  font-family: 'Kite One', sans-serif;;
+}
+
+#search-bar {
+  width: 100%;
+  height: 50px;
+  background: #e5e5e5; /* Old browsers */
+  background: -moz-linear-gradient(top, #e5e5e5 0%, #cccccc 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e5e5e5 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e5e5e5 0%,#cccccc 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e5e5e5 0%,#cccccc 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #e5e5e5 0%,#cccccc 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+  margin-bottom: 10px;
+}
+
+#search-bar input[type="search"] {
+  display: inline-block;
+  width: 80%;
+  margin-top: 10px;
+  height: 30px;
+}
+
+#search-bar input[type="button"] {
+  display: inline-block;
+  margin-top: 10px;
+  height: 30px;
+}
+
+.spinner {
+  padding-top: 23px;
+  display: none;
+}
+
+
+
+/* Custom container */
+.container {
+  margin: 0 auto;
+  text-align:center;
+}
+.container > hr {
+  margin: 60px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+
+
+
+.meta {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #285e8e;
+  font-weight: bold;
+}
+
+.meta img {
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+.user {
+  width: 45px;
+  margin-left: 10px;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.post {
+  max-width: 800px;
+  margin: 0px auto;
+  margin-bottom: 10px;
+}
+
+.post .image {
+  width: 100%;
+}
