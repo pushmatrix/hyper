@@ -62,7 +62,7 @@
   var startTimestamp = 0;
   var endTimestamp = 0;
   var currentTimestamp = 0;
-  var timeStep = 3 // 5 minute for every second
+  var timeStep = 15 // 5 minute for every second
   var range = 0;
   var infowindow = null;
 
@@ -164,7 +164,7 @@
     function playVideo() {
       $("#playBtn").html("&#10074;&#10074;");
       playInterval = setInterval(function() {
-        currentTimestamp += 10 * 60;
+        currentTimestamp += 10 * 60 * timeStep;
         updateTimeline();
         updateMap();
       }, 10 / timeStep );
