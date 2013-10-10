@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>The Internet</title>
+
+    <meta name="description" content="Slides for Ecomm14.">
+    <meta name="author" content="Daniel Beauchamp">
+    <link rel="icon" 
+      type="image/ico" 
+      href="favicon.ico">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/blue.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+
+    <style type="text/css">
+      img{
+        border: none !important;
+        box-shadow: none !important;
+        background: none;
+      }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section data-markdown>
+          #HEJ!
+        </section>
+
+        <section>
+          <h1 class="fragment"> Holy Fuck!</h1>
+          <h1 class="fragment"> the Internet is Amazing</h1>
+        </section>
+
+        <section data-background="#990000">
+          <h1> Youtube</h1>
+        </section>
+
+        <section data-background="white">
+          <h1 style="font-family: Times; font-size: 120px;color: black"> Wikipedia</h1>
+        </section>
+
+        <section data-background="#0266C8">
+          <h1> Google</h1>
+        </section>
+
+        <section data-background="white">
+          <img style="border: none; box-shadow: none" src="images/googledocs.jpg">
+        </section>
+
+        <section data-background="white">
+          <img style="border: none; box-shadow: none" src="images/facetime.jpg">
+        </section>
+
+        <section>
+          <h1>That's so 2010...</h1>
+        </section>
+
+        <section>
+          <h3>There's more!</h3>
+          <img class="fragment" src="images/alladin.jpg">
+        </section>
+
+        <section>
+          <h2>Lights controllable via API</h2>
+          <img src="images/lights.jpg">
+          <h3><a href="http://developers.meethue.com/1_lightsapi.html#16_set_light_state" target="_blank">Check out the API docs</a></h3>
+        </section>
+
+        <section>
+          <h1>So many API<small>s</small></h1>
+          <h2><a class="fragment" href="https://developers.google.com/maps/" target="_blank">Google Maps</a></h2>
+          <h2><a class="fragment" href="https://developers.google.com/maps/documentation/elevation/#What" target="_blank">Google Elevation API</a></h2>
+          <h2><a class="fragment" href="https://developers.google.com/maps/documentation/directions/" target="_blank">Google Directions API</a></h2>
+          <h3 class="fragment">...and they're free</h3>
+        </section>
+
+        <section>
+          <h2>IFTTT</h2>
+          <h3 class="fragment"><img src="images/ifttt2.png"></h3>
+          <h3 class="fragment"><img src="images/ifttt1.png"></h3>
+          <a class="fragment" href="http://www.lifehack.org/articles/technology/35-super-useful-ifttt-recipes-you-might-not-know-about.html" target="_blank">Check out other useful ones</a>
+        </section>
+
+        <section data-background="images/money.jpg" style="text-shadow: 1px 2px black">
+          <section>
+            <h1>Internet Money Sucks</h1>
+          </section>
+          <section>
+            <img src="images/paypal.jpg">
+          </section>
+          <section>
+            <h1>Stripe</h1>
+            <pre class="fragment"><code class="ruby">
+# Set your secret key: remember to change this to your live secret key in production
+# See your keys here https://manage.stripe.com/account
+Stripe.api_key = "sk_test_mkGsLqEW6SLnZa487HYfJVLf"
+
+# Get the credit card details submitted by the form
+token = params[:stripeToken]
+
+# Create the charge on Stripe's servers - this will charge the user's card
+begin
+  charge = Stripe::Charge.create(
+    :amount => 1000, # amount in cents, again
+    :currency => "usd",
+    :card => token,
+    :description => "payinguser@example.com"
+  )
+rescue Stripe::CardError => e
+  # The card has been declined
+end
+            </pre></code>
+            <pre class="fragment"><code>
+Stripe.card.createToken({
+    number: $('.card-number').val(),
+    cvc: $('.card-cvc').val(),
+    exp_month: $('.card-expiry-month').val(),
+    exp_year: $('.card-expiry-year').val()
+}, stripeResponseHandler);
+</pre></code>
+
+
+
+          </section>
+        </section>
+
+        <section>
+          <h1>The browser is a powerful thing...</h1>
+          <a href="http://pushmatrix.github.io/accel/" target="_blank">Check this out</a>
+        </section>
+
+        <section>   
+          <h2>And this is the code</h2>
+          <img src="images/code.png">
+        </section>
+
+        <section>
+          <h2><a href="http://madebyevan.com/webgl-water/" target="_blank">WebGL</a></h2>
+          <img src="images/webgl.png">
+        </section>
+
+        <section>
+          <h2>But mobile browsers don't support cameras....</h2>
+        </section>
+
+        <section>
+          <h1>Phone Gap</h1>
+          <a href="http://phonegap.com"><img src="images/phonegap.png" target="_blank"></a>
+        </section>
+
+        <section>
+          <section>
+            <img src="images/servers.jpg">
+          </section>
+
+          <section>
+            <img src="images/amazon.jpg">
+          </section>
+
+          <section>
+            <img src="images/webservice.png">
+          </section>
+
+          <section>
+            <a href="http://www.heroku.com" target="_blank"><img src="images/heroku.jpg"></a>
+            <h2></h2>
+          </section>
+
+          <section>
+            <h3>2013</h3>
+            <h2>You don't need a backend anymore...</h2>
+          </section>
+
+        </section>
+
+        <section>
+          <a href="https://www.firebase.com/" target="_blank"><img src="images/firebase.jpg" width=600></a>
+        </section>
+
+        <section>
+          <h2><a href="firebase.html" src="" target="_blank">A chat</a></h2>
+        </section>
+
+        <section>
+          <h2>And this is the code...</h2>
+          <img src="images/code2.png">
+        </section>
+
+        <section>
+          <h2>Inspecting Data</h2>
+          <a href="https://hyperisland.firebaseio-demo.com/">Firebase for the chat</a><br>
+          <a href="https://calls.firebaseio.com/">Firebase for the mobile example</a>
+        </section>
+
+        <section>
+          <a href="https://www.firebase.com/docs/examples.html" target="_blank">Firebase Examples</a>
+        </section>
+
+        <section data-background="images/alberta.jpg">
+          <section>
+          </section>
+          <section>
+          <p style="background: white; color: black; text-align: left">"When the floods hit Alberta, I saw a need for a realtime communications app to match volunteers with the victims who needed them. <br><br> So I had a weekend project on my hands.
+Without much/any javascript/web experience I was able to take their existing twitter-clone implementation and transform it into a flood relief application" <br><br> -fudged71 </p>
+          </section>
+
+          <section>
+            <a href="http://highriver.abfloods.ca/" target="_blank"><img src="images/abflood.png"></a>
+          </section>
+        </section>
+
+        <section>
+          <h1> Holy Fuck!</h1>
+          <h1> the Internet is Amazing</h1>
+        </section>
+
+
+        <section>
+          <h1><a href="https://www.webscript.io/examples/stripe" target="_blank">Webscript.io</a></h1>
+        </section>
+
+
+        <section>
+          <a href="http://twilio.com" target="_blank"><img src="images/twilio.png"></a>
+        </section>
+
+        <section>
+          <h2><a href="https://www.twilio.com/user/account/phone-numbers/incoming">Configuration</a></h2>
+        </section>
+
+        <section>
+          <img src="images/tape.jpg">
+        </section>
+
+
+
+        <section>
+          <img src="images/twilio.png">
+          <h2 class="fragment">+</h2>
+          <h2 class="fragment">webscript.io</h2>
+          <h2 class="fragment">+</h2>
+          <img class="fragment" src="images/firebase.jpg">
+        </section>
+
+        <section>
+          <h2>+46 10 138 80 12</h2>
+        </section>
+
+
+
+        <section>
+          <img src="images/morph.jpg" width="500">
+        </section>
+
+        <section>
+          <h6>Twilio instructions (tell twilio to record the message, and send the transcription to webscript.io)</h6>
+          <img src="images/step1.png">
+          <h6>Webscript instructions (When you get the data, post it to firebase)</h6>
+          <img src="images/step2.png">
+        </section>
+
+        <section>
+          <h1 class="fragment"> Holy Fuck!</h1>
+          <h1 class="fragment"> the Internet is Amazing</h1>
+        </section>
+
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        rollingLinks: false,
+
+        theme: 'blue', // available themes are in /css/theme
+        transition:  'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/leap/leap.js', async: true }
+          // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

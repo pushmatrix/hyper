@@ -1,0 +1,14 @@
+- Why scrape? (http://www.nie.edu.sg/staff-directory)
+- 3 ways of scraping (manual, programmatic, tool)
+- Play around with structure of a website (chrome web inspector)
+- Ok so what are we doing today? We are going to scrape some stuff
+- scrape somewhere with images (cats!)
+- scrape reddit, and put it in tag cloud (http://tagcrowd.com/)
+  - http://alchemyapi.com/api.demo.html
+  - (intro to guess tab + pagination)
+- scrape singapore staff directory: http://www.nie.edu.sg/staff-directory
+  - (intro to tables tab + custom scraper)
+- airbnb & fusion table (Get address & price & name & room type)
+  - (intro to "guess tab")
+  - note: be careful when you export. Google doesn't like the exported csv/xls. You need to resave them in excel for them to be kosher.
+  - Make sure to create a map with the "address" field selected
