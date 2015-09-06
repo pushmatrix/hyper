@@ -1,8 +1,9 @@
+
 <html>
 <head>
   <script src="https://cdn.firebase.com/v0/firebase.js"></script>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
-  <link rel="stylesheet" type="text/css" href="https://www.firebase.com/css/example.css">
+  <link rel="stylesheet" type="text/css" href="css/example.css">
 </head>
 <body>
   <h1>Hyper Island DDS Chat</h1>
@@ -13,7 +14,7 @@
 <script>
 
   // Get a reference to the root of the chat data.
-  var messagesRef = new Firebase('https://hyperisland.firebaseio-demo.com/');
+  var messagesRef = new Firebase('https://hyperisland.firebaseio.com');
 
   // When the user presses enter on the message input, write the message to firebase.
   $('#messageInput').keypress(function (e) {
